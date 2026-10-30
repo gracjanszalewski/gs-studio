@@ -583,3 +583,41 @@ body.is-preload #intro { transform: translateY(2rem); opacity: 0; }
 
 /* === UKRYCIE PRZYCISKU MOBILNEGO === */
 #navPanelToggle { display: none !important; }
+/* === OSTATECZNA POPRAWKA DLA TABELI CENNIKA === */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-wrapper table {
+    width: 100% !important;
+    table-layout: fixed !important; /* Wymusza sztywne proporcje kolumn */
+    border-collapse: collapse !important;
+}
+
+.table-wrapper th, 
+.table-wrapper td {
+    text-align: center !important; /* Wyśrodkowanie całego tekstu */
+    vertical-align: middle !important;
+    padding: 1.5rem 1rem !important;
+    word-wrap: break-word !important; /* Zawija "One-page", żeby nie rozpychało tabeli */
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+}
+
+/* Ustawiamy szerokości: Usługa (25%), Opis (45%), Cena (30%) */
+.table-wrapper th:nth-child(1), 
+.table-wrapper td:nth-child(1) {
+    width: 25% !important;
+}
+
+.table-wrapper th:nth-child(2), 
+.table-wrapper td:nth-child(2) {
+    width: 45% !important;
+}
+
+.table-wrapper th:nth-child(3), 
+.table-wrapper td:nth-child(3) {
+    width: 30% !important;
+    font-weight: 900 !important; /* Cena będzie pogrubiona */
+}
