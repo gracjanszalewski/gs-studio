@@ -595,6 +595,16 @@ body.is-preload #intro { transform: translateY(2rem); opacity: 0; }
         text-align: center; 
         word-wrap: break-word; /* Zapobiega ucinaniu słów, np. "się" */
     }
+	    /* Wyrównanie ikon społecznościowych do środka */
+    #footer ul.icons.alt {
+        justify-content: center !important; 
+        padding-left: 0 !important; 
+    }
+    
+    /* Usunięcie prawego paddingu z ostatniej ikony, żeby idealnie się wyśrodkowała */
+    #footer ul.icons.alt li:last-child {
+        padding-right: 0 !important;
+    }
 }
 @media screen and (max-width: 980px) {
 	#footer { grid-template-columns: 1fr; padding: 2rem; gap: 3rem; }
