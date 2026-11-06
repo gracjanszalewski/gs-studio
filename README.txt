@@ -4,7 +4,7 @@ Moje osobiste portfolio oraz strona firmowa promująca usługi z zakresu Web Dev
 
 ## 🔗 Zobacz na żywo
 Strona jest hostowana za pomocą GitHub Pages: 
-👉 **[https://gracjanszalewski.github.io/gs-studio/](https://gracjanszalewski.github.io/gs-studio/)**
+👉 https://gracjanszalewski.github.io/gs-studio/#
 
 ## 🛠️ Wykorzystane technologie
 *   HTML5 / CSS3
