@@ -701,3 +701,27 @@ body.is-preload #intro { transform: translateY(2rem); opacity: 0; }
 	margin-top: 4rem !important;
 	margin-bottom: auto !important; 
 }
+
+/* === POPRAWKI DLA TABELI CENNIKA === */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 2rem 0;
+}
+
+table th, table td {
+	padding: 1.5rem 1rem; /* Daje dużo "oddechu" w pionie i poziome */
+	vertical-align: middle; /* Wyrównuje tekst i ceny idealnie w środku */
+	text-align: center; /* Wyśrodkowuje cały tekst i ceny */
+	border-bottom: 1px solid #e2e8f0; /* Delikatna linia oddzielająca wiersze */
+}
+
+table th {
+	font-weight: bold;
+	background-color: #f8fafc; /* Delikatne tło dla nagłówka tabeli */
+}
+
+/* Ostatnia kolumna (ceny) - zapobiega łamaniu się ceny na dwie linie */
+table td:last-child {
+	white-space: nowrap; 
+}
